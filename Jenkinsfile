@@ -1,12 +1,7 @@
 pipeline {
-  agent {
-    docker {
-      image 'registry.redhat.io/ubi8/ubi'
-    }
-
-  }
+  agent any
   stages {
-    stage('Stage 1') {
+    stage('Step 1') {
       steps {
         sh 'date'
       }
